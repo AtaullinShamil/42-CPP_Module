@@ -1,21 +1,36 @@
-NAME     = megaphone
-CC       = c++
-RM       = rm -f
-CFLAGS   = -Wall -Wextra -Werror -std=c++98
-SOURSES  = megaphone.cpp
-OBJECTS  = $(SOURCES:.cpp=.o)
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/21 13:17:26 by ntojamur          #+#    #+#              #
+#    Updated: 2022/11/21 13:17:33 by ntojamur         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME  = megaphone
+CC    = c++ -std=c++98
+FLAGS = -Wall -Werror -Wextra
+OBJ   = $(SRC:.cpp=.o)
+SRC   = megaphone.cpp
+RM    = rm -f
 
 all    : $(NAME)
 
-NAME   : $(SOURCES) $(OBJECTS)
-	$(CC) $(OBJECTS) $(CFLAGS) -o $(NAME)
+%.o    : %.cpp Makefile
+	$(CC) $(FLAGS) -c $< -o $@
+
+$(NAME): $(OBJ)
+	$(CC) $(FLAGS) -o $(NAME) $(OBJ)
 
 clean  :
-	$(RM) $(OBJECTS)
+	$(RM) $(OBJ)
 
 fclean : clean
 	$(RM) $(NAME)
 
-re     : fclean $(NAME)
+re     : fclean all
 
-.PHONY: all clean fclean re
+.PHONY : all clean fclean re
