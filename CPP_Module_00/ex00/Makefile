@@ -6,16 +6,16 @@
 #    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/21 13:17:26 by ntojamur          #+#    #+#              #
-#    Updated: 2022/11/21 13:17:33 by ntojamur         ###   ########.fr        #
+#    Updated: 2022/11/23 10:21:31 by ntojamur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME  = megaphone
 CC    = c++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
+RM    = rm -f
 OBJ   = $(SRC:.cpp=.o)
 SRC   = megaphone.cpp
-RM    = rm -f
 
 all    : $(NAME)
 
