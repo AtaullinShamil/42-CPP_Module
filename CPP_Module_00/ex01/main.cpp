@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 10:23:03 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/23 13:17:57 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:20:24 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void Contact::set(void)
 		std::cout << "> the field cannot be empty. enter a darkest secret\n> ";
 		std::getline(std::cin, darkest_secret);
 	}
-	std::cout << "|-------------------------|" << std::endl;
+	std::cout << "|--------------------------|" << std::endl;
 	std::cout << "|the contact has been added|" << std::endl;
 	std::cout << "|--------------------------|" << std::endl;
 }
