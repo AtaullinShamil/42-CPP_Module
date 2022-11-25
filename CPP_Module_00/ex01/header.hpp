@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 10:58:12 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/23 12:46:10 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 06:39:45 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,13 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 class Contact{
 	public:
-		void	set(void);
+		void		set(int num);
+		std::string	get_name(void);
+		void		print_info(void);
 
 	private:
 		std::string	first_name;
@@ -26,6 +29,7 @@ class Contact{
 		std::string	nickname;
 		std::string	phone_number;
 		std::string	darkest_secret;
+		int			index;
 };
 
 class  PhoneBook{

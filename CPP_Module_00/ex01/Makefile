@@ -6,7 +6,7 @@
 #    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 11:00:02 by ntojamur          #+#    #+#              #
-#    Updated: 2022/11/23 11:07:38 by ntojamur         ###   ########.fr        #
+#    Updated: 2022/11/25 06:30:36 by ntojamur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC = c++ -std=c++98
 CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 OBJ = $(SRC:.cpp=.o)
-SRC = main.cpp
+SRC = main.cpp PhoneBook.cpp Contact.cpp
 HEADER = header.hpp
 
 all : $(NAME)
