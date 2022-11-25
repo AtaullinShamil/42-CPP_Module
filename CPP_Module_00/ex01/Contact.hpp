@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 10:11:59 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/25 10:28:34 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 10:48:28 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,11 @@ class Contact{
 		int			index;
 
 	public:
-		void		set(int num);
-		std::string	get_name(void);
-		void		print_info(void);
+		Contact();
+
+		void	set(int num);
+//		std::string	get_name(void);
+		int		print_info(void);
 };
 
 # endif

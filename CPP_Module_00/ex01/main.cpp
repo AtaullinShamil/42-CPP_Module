@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 10:23:03 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/25 10:18:48 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 10:36:52 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int	main()
 {
-	PhoneBook PhoneBook;
-	std::string cmd;
+	PhoneBook	PhoneBook;
+	std::string	cmd;
 
 	while (1){
 		std::cout << "> enter a command\n> ";
@@ -27,8 +27,6 @@ int	main()
 			PhoneBook.search();
 		else if (cmd == "EXIT")
 			break ;
-		else
-			std::cout << "> Wrong command" << std::endl;
 	}
 	return (0);
 }

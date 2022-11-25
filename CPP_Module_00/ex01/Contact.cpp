@@ -6,11 +6,15 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 06:29:59 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/25 10:28:24 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 10:51:02 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+
+Contact::Contact(){
+	index = -1;
+}
 
 void Contact::set(int num)
 {
@@ -50,13 +54,9 @@ void Contact::set(int num)
 	std::cout << "|--------------------------|" << std::endl;
 }
 
-std::string	Contact::get_name(void){
-	return(first_name);
-}
-
-void	Contact::print_info(void){
-	std::cout << "|  Index   |First Name| Last Name| Nickname |" << std::endl;
-	std::cout << "|-------------------------------------------|" << std::endl;
+int	Contact::print_info(void){
+	if (index == -1)
+		return (1);
 	std::cout << "|";
 	std::cout << std::setw(10) << index << "|";
 	if (first_name.length() < 11)
@@ -71,4 +71,5 @@ void	Contact::print_info(void){
 		std::cout << std::setw(10) << nickname << "|" << std::endl;
 	else
 		std::cout << nickname.substr(0, 9) << "." << "|" << std::endl;
+	return (0);
 }
