@@ -6,25 +6,27 @@
 #    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 11:00:02 by ntojamur          #+#    #+#              #
-#    Updated: 2022/11/25 06:30:36 by ntojamur         ###   ########.fr        #
+#    Updated: 2022/11/25 10:32:39 by ntojamur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = PhoneBook
-CC = c++ -std=c++98
-CFLAGS = -Wall -Werror -Wextra
-RM = rm -f
-OBJ = $(SRC:.cpp=.o)
-SRC = main.cpp PhoneBook.cpp Contact.cpp
-HEADER = header.hpp
+NAME  = PhoneBook
+CC    = c++ -std=c++98
+FLAGS = -Wall -Werror -Wextra
+RM    = rm -f
+OBJ   = $(SRC:.cpp=.o)
 
-all : $(NAME)
+SRC			= main.cpp Contact.cpp PhoneBook.cpp
+HEADER		= Contact.hpp PhoneBook.hpp main.cpp
 
-$(NAME) : $(OBJ)
-	$(CC) $(OBJ) $(CFLAGS) -o $(NAME)
 
-*.o : $(SRC) $(HEADER) Makefile
+all: $(NAME)
+
+%.o : %.cpp $(HEADER) Makefile
 	$(CC) $(FLAGS) -c $< -o $@
+
+$(NAME): $(OBJ)
+	$(CC) $(FLAGS) -o $(NAME) $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
@@ -34,4 +36,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY : all clean fclean re
+.PHONY: all clean fclean re

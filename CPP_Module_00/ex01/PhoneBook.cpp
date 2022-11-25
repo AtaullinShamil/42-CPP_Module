@@ -6,11 +6,15 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 06:29:27 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/25 06:33:21 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 10:28:41 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "PhoneBook.hpp"
+
+PhoneBook::PhoneBook(){
+	num = 0;
+}
 
 void	PhoneBook::add(void){
 	contacts[num].set(num);
@@ -18,11 +22,6 @@ void	PhoneBook::add(void){
 	if (num > 7)
 		num = 0;
 }
-
-void	PhoneBook::set_num(void){
-	num = 0;
-}
-
 
 void	PhoneBook::search(void){
 	std::string name;

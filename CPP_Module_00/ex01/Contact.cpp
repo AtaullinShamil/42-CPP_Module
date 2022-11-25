@@ -6,11 +6,11 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 06:29:59 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/25 06:58:26 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 10:28:24 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.hpp"
+#include "Contact.hpp"
 
 void Contact::set(int num)
 {
