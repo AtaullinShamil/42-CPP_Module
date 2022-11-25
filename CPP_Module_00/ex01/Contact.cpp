@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 06:29:59 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/25 10:51:02 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/25 11:17:01 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,4 +72,14 @@ int	Contact::print_info(void){
 	else
 		std::cout << nickname.substr(0, 9) << "." << "|" << std::endl;
 	return (0);
+}
+
+void	Contact::print_all(void){
+	if (index == -1)
+		return ;
+	std::cout << "First Name : " << first_name << std::endl;
+	std::cout << "Last Name : " << second_name << std::endl;
+	std::cout << "Nickname : " << nickname << std::endl;
+	std::cout << "Phone number : " << phone_number << std::endl;
+	std::cout << "Darkest secret : " << darkest_secret << std::endl;
 }
