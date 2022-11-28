@@ -6,12 +6,12 @@
 #    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/27 16:26:39 by ntojamur          #+#    #+#              #
-#    Updated: 2022/11/27 17:09:36 by ntojamur         ###   ########.fr        #
+#    Updated: 2022/11/29 01:05:00 by ntojamur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= Zombie
-CC		= clang++ -std=c++98
+CC		= c++ -std=c++98
 FLAGS	= -Wall -Werror -Wextra
 RM		= rm -f
 OBJ = $(SRC:.cpp=.o)
