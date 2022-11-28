@@ -6,15 +6,15 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 02:10:12 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/29 01:03:56 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/29 01:53:01 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string const &name):
-	name(name), weapon(NULL)
-{
+HumanB::HumanB(std::string const &name){
+	this->name = name;
+	this->weapon = NULL;
 }
 
 void HumanB::setWeapon(const Weapon &weapon){

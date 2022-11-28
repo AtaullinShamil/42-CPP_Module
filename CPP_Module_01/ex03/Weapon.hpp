@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 02:08:58 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/29 01:03:25 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/29 01:53:16 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ class Weapon{
 		std::string type;
 
 	public:
-		Weapon();
 		Weapon(std::string const &type);
-
 		void setType(std::string const &type);
 		std::string const &getType(void) const;
 };
