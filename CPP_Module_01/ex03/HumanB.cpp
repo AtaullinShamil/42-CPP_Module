@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 02:10:12 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/11/29 01:53:01 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/11/29 04:55:44 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void HumanB::attack(void) const{
 	if (this->weapon)
 		std::cout << this->name << " attacks with his " << this->weapon->getType() << std::endl;
 	else
-		std::cout << this->name << " can't attack because he has no Weapon !" << std::endl;
+		std::cout << this->name << " attacks with his hands because he has no Weapon !" << std::endl;
 }
