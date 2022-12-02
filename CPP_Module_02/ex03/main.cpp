@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 09:36:25 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/02 10:05:37 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/12/02 10:20:14 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ int	main(void)
 		{
 			Point	findPoint(x, y);
 			std::cout << "Point x = " << x << ", y = " << y << "\t\t[res = ";
-			std::string res = bsp(point1, point2, point3, findPoint) == 1 ? "true" : "false" ;
-			std::cout << res << "]"<< std::endl;
+			if (bsp(point1, point2, point3, findPoint))
+				std::cout << "true" << "]"<< std::endl;
+			else
+				std::cout << "false" << "]"<< std::endl;
 		}
 	}
-	return (1);
+	return (0);
 }
