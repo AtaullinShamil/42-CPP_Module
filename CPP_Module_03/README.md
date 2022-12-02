@@ -1,0 +1,4 @@
+# CPP_Module_03
+## This module is designed to help you understand Inheritance in CPP.
+## Subject
+**The assignment is here!** [(link)](https://github.com/AtaullinShamil/42-CPP_Module/blob/main/CPP_Module_03/includes/cpp_03.pdf)
