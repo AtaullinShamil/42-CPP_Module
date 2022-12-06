@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 17:15:55 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/06 17:36:11 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/12/06 19:18:10 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ DiamondTrap::DiamondTrap(std::string name) :
 	this->name = name;
 	this->hit_points = this->FragTrap::hit_points;
 	this->energy = this->ScavTrap::energy;
-	std::cout << "\n energy - " << this-> energy << "\n" << this->ScavTrap::energy << "\n\n";
-	this->attack_damage = this->FragTrap::attack_damage;;
+	this->attack_damage = this->FragTrap::attack_damage;
 	std::cout << "DiamondTrap " << this->name << " constructed!\n"
 		<< "Hits: " << this->hit_points << " DMG: "
 		<< this->attack_damage << " Energy: " << this->energy << std::endl;
