@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 02:47:24 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/06 12:02:22 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/12/06 13:59:37 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 int	main(){
 	ClapTrap Wigfrid("Wigfrid");
-	ClapTrap Webber;
 
 	Wigfrid.attack("Crawlinghorror");
 	Wigfrid.takeDamage(8);
 	Wigfrid.attack("Deerclop");
 	Wigfrid.takeDamage(1);
-	Wigfrid.attack("Glommer");
+	Wigfrid.attack("Klaus");
 	Wigfrid.beRepaired(1);
 	Wigfrid.attack("Pigman");
 	Wigfrid.beRepaired(1);
@@ -29,8 +28,6 @@ int	main(){
 	Wigfrid.beRepaired(1);
 	Wigfrid.beRepaired(1);
 	Wigfrid.beRepaired(1);
-	Wigfrid.attack("Koalefant");
-	Webber = Wigfrid;
-	Webber.attack("Klaus");
+	Wigfrid.attack("Glommer");
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 02:47:33 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/06 12:03:27 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/12/06 13:58:08 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,12 @@ ClapTrap::ClapTrap(std::string name){
 	std::cout << "CalpTrap " << name << " has been created" << std::endl;
 }
 
-ClapTrap::~ClapTrap(){
-	std::cout << "CalpTrap " << name << " destructed" << std::endl;
+ClapTrap::ClapTrap(ClapTrap const &other){
+	*this = other;
 }
 
-ClapTrap &ClapTrap::operator=(ClapTrap const &clap){
-	this->name = clap.name;
-	this->hit_points = clap.hit_points;
-	this->energy = clap.energy;
-	this->attack_damage = clap.attack_damage;
-	std::cout << "CalpTrap " << clap.name << " cloned throught =" << std::endl;
-	return (*this);
+ClapTrap::~ClapTrap(){
+	std::cout << "CalpTrap " << name << " destructed" << std::endl;
 }
 
 void ClapTrap::attack(std::string const & target){
@@ -78,4 +73,13 @@ void ClapTrap::beRepaired(unsigned int amount)
 		std::cout << "ClapTrap " << this->name << " can't be repaired, it's destroyed" << std::endl;
 	else
 		std::cout << "ClapTrap " << this->name << " doesn't have enought energy to repair" << std::endl;
+}
+
+ClapTrap &ClapTrap::operator=(ClapTrap const &clap){
+	this->name = clap.name;
+	this->hit_points = clap.hit_points;
+	this->energy = clap.energy;
+	this->attack_damage = clap.attack_damage;
+	std::cout << "CalpTrap " << clap.name << " cloned" << std::endl;
+	return (*this);
 }
