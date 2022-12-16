@@ -1,36 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   WrongDog.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/12 15:29:01 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/16 11:19:58 by ntojamur         ###   ########.fr       */
+/*   Created: 2022/12/16 11:00:18 by ntojamur          #+#    #+#             */
+/*   Updated: 2022/12/16 11:17:14 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "WrongDog.hpp"
 
-Dog::Dog() {
-	this->type = string("Dog");
-	std::cout << "Constructor <Dog> called" << std::endl;
+WrongDog::WrongDog() {
+	this->type = string("WrongDog");
+	std::cout << "Constructor <WrongDog> called" << std::endl;
 }
 
-Dog::Dog(const Dog &old) {
+WrongDog::WrongDog(const WrongDog &old) {
 	this->type = old.getType();
-	std::cout << "Assignment constructor <Dog> called" << std::endl;
+	std::cout << "Assignment constructor <WrongDog> called" << std::endl;
 }
 
-Dog& Dog::operator= (const Dog &other) {
+WrongDog& WrongDog::operator= (const WrongDog &other) {
 	this->type = other.getType();
 	return(*this);
 }
 
-Dog::~Dog() {
-	std::cout << "Destructor <Dog> called" << std::endl;
+WrongDog::~WrongDog() {
+	std::cout << "Destructor <WrongDog> called" << std::endl;
 }
 
-void	Dog::makeSound(void) const {
-	std::cout << "The Dog says : woof-wooof" << std::endl;
+void	WrongDog::makeSound(void) const {
+	std::cout << "The WrongDog says : woof-wooof" << std::endl;
 }

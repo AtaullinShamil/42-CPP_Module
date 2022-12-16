@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 15:27:17 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/12 15:43:54 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/12/16 11:19:40 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ string	Animal::getType (void) const {
 }
 
 void	Animal::makeSound(void) const {
-	std::cout << "... animal sound ..." << std::endl;
+	std::cout << "... Animal sound ..." << std::endl;
 }
 
 

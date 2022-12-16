@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 15:29:19 by ntojamur          #+#    #+#             */
-/*   Updated: 2022/12/12 15:54:38 by ntojamur         ###   ########.fr       */
+/*   Updated: 2022/12/16 11:19:48 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ Cat::~Cat() {
 }
 
 void	Cat::makeSound(void) const {
-	std::cout << "The cat says : meow" << std::endl;
+	std::cout << "The Cat says : meow" << std::endl;
 }

@@ -6,7 +6,7 @@
 #    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 15:27:44 by ntojamur          #+#    #+#              #
-#    Updated: 2022/12/12 15:28:40 by ntojamur         ###   ########.fr        #
+#    Updated: 2022/12/16 11:02:27 by ntojamur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,8 @@ FLAGS	= -Wall -Werror -Wextra
 RM		= rm -f
 OBJ		= $(SRC:.cpp=.o)
 
-SRC		= main.cpp Animal.cpp Dog.cpp Cat.cpp
-HEADER	= Animal.hpp Dog.hpp Cat.hpp
+SRC		= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp WrongDog.cpp
+HEADER	= Animal.hpp Dog.hpp Cat.hpp  WrongAnimal.hpp  WrongCat.hpp WrongDog.hpp
 
 all: $(NAME)
 
