@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 17:02:11 by ntojamur          #+#    #+#             */
-/*   Updated: 2023/01/12 11:24:11 by ntojamur         ###   ########.fr       */
+/*   Updated: 2023/01/12 11:48:17 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 using std::string;
 
 class Bureaucrat {
-	protected:
+	private:
 		Bureaucrat();
 		string const	name;
 		int	grade;
