@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 17:01:49 by ntojamur          #+#    #+#             */
-/*   Updated: 2023/01/13 00:16:26 by ntojamur         ###   ########.fr       */
+/*   Updated: 2023/01/15 09:14:44 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,22 +24,30 @@ int main(void) {
 	Bureaucrat bob("Bob", 25);
 	std::cout << bob << std::endl;
 
+	std::cout << "---------------" << std::endl;
+
 	Form *shrub = new ShrubberyCreationForm("home");
 	std::cout << *shrub << std::endl;
 	boss.signForm(*shrub);
 	bob.executeForm(*shrub);
+
+	std::cout << "---------------" << std::endl;
+
 
 	Form *pres = new PresidentialPardonForm("Bob");
 	std::cout << *pres << std::endl;
 	boss.signForm(*pres);
 	boss.executeForm(*pres);
 
+	std::cout << "---------------" << std::endl;
+
 	Form *robot = new RobotomyRequestForm("Ilon");
 	std::cout << *robot << std::endl;
 	boss.signForm(*robot);
 	bob.executeForm(*robot);
 
-	std::cout << std::endl;
+	std::cout << "---------------" << std::endl;
+	std::cout << "---------------" << std::endl;
 
 	try
 	{
@@ -50,7 +58,7 @@ int main(void) {
 		std::cerr << e.what() << std::endl;
 	}
 
-	std::cout << std::endl;
+	std::cout << "---------------" << std::endl;
 
 	try
 	{
@@ -63,7 +71,7 @@ int main(void) {
 		std::cerr << e.what() << std::endl;
 	}
 
-	std::cout << std::endl;
+	std::cout << "---------------" << std::endl;
 
 	try
 	{
@@ -77,7 +85,7 @@ int main(void) {
 		std::cerr << e.what() << std::endl;
 	}
 
-	std::cout << std::endl;
+	std::cout << "---------------" << std::endl;
 
 	try
 	{
