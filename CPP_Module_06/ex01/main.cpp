@@ -1,4 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/15 15:21:14 by ntojamur          #+#    #+#             */
+/*   Updated: 2023/01/15 15:22:04 by ntojamur         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
+#include <string.h>
 
 typedef unsigned long uintptr_t;
 
@@ -18,7 +31,7 @@ int main() {
 	Data *data = new Data;
 	Data *after;
 	uintptr_t ptr;
-	data->str = "Serialization";
+	data->str = "Reinterpret_cast";
 
 	std::cout << data << " : " << data->str << std::endl;
 	ptr = serialize(data);

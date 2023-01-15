@@ -1,15 +1,26 @@
-NAME	= Serialization
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/01/15 15:21:12 by ntojamur          #+#    #+#              #
+#    Updated: 2023/01/15 15:21:13 by ntojamur         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME	= Reinterpret_cast
 CC		= c++ -std=c++98
 FLAGS	= -Wall -Werror -Wextra
 RM		= rm -f
 OBJ		= $(SRC:.cpp=.o)
 
 SRC		= main.cpp
-#HEADER	=
 
 all: $(NAME)
 
-%.o : %.cpp Makefile #$(HEADER)
+%.o : %.cpp Makefile
 	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
