@@ -6,7 +6,7 @@
 /*   By: ntojamur <ntojamur@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 08:38:02 by ntojamur          #+#    #+#             */
-/*   Updated: 2023/01/16 10:09:35 by ntojamur         ###   ########.fr       */
+/*   Updated: 2023/01/16 10:14:02 by ntojamur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #define MAX_VAL 750
 #include <cstdlib>
 
-int main(void)
+int main()
 {
 	Array<int>			int_Arr;
 	Array<std::string>	str_arr(7);
